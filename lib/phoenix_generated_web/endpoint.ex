@@ -30,7 +30,8 @@ defmodule PhoenixGeneratedWeb.Endpoint do
     at: "/torch",
     from: {:torch, "priv/static"},
     gzip: true,
-    cache_control_for_etags: "public, max-age=86400"
+    cache_control_for_etags: "public, max-age=86400",
+    headers: [{"access-control-allow-origin", "*"}]
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.

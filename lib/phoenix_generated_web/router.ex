@@ -16,6 +16,7 @@ defmodule PhoenixGeneratedWeb.Router do
   scope "/", PhoenixGeneratedWeb do
     pipe_through :browser
 
+    resources "/users", UserController
     get "/", PageController, :index
   end
 
