@@ -1,27 +1,20 @@
-# Phoenix Generated
+# PhoenixGenerated
 
-Getting started:
+To start your Phoenix server:
 
-    # if you wish the run the examples against a DB
-    docker-compose up -d
+  * Install dependencies with `mix deps.get`
+  * Create and migrate your database with `mix ecto.setup`
+  * Install Node.js dependencies with `npm install` inside the `assets` directory
+  * Start Phoenix endpoint with `mix phx.server`
 
-Examples of different version of Phoenix using the generators:
+Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-    # Phoenix HTML
+Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
-    mix phx.new phoenix_generated
-    mix phx.gen.html Accounts User users name:string age:integer
+## Learn more
 
-    # Phoenix Live
-
-    mix phx.new phoenix_generated --live
-    mix phx.gen.live Accounts User users name:string age:integer
-
-    # Phoenix Torch
-
-    mix phx.new phoenix_generated
-    # configure https://github.com/mojotech/torch
-    mix torch.install
-    mix torch.gen.html Accounts User users name:string age:integer
-
-Checkout the branches to see the different versions.
+  * Official website: https://www.phoenixframework.org/
+  * Guides: https://hexdocs.pm/phoenix/overview.html
+  * Docs: https://hexdocs.pm/phoenix
+  * Forum: https://elixirforum.com/c/phoenix-forum
+  * Source: https://github.com/phoenixframework/phoenix
