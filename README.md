@@ -17,6 +17,11 @@ Examples of different version of Phoenix using the generators:
     mix phx.new phoenix_generated --live
     mix phx.gen.live Accounts User users name:string age:integer
 
+    # Phoenix Umbrella/Live
+
+    mix phx.new phoenix_generated --live --umbrella
+    mix phx.gen.live Accounts User users name:string age:integer
+
     # Phoenix Torch
 
     mix phx.new phoenix_generated
