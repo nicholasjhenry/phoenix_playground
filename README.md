@@ -7,7 +7,21 @@ Getting started:
 
 Examples of different version of Phoenix using the generators:
 
+    # Phoenix HTML
+
     mix phx.new phoenix_generated
     mix phx.gen.html Accounts User users name:string age:integer
+
+    # Phoenix Live
+
+    mix phx.new phoenix_generated --live
+    mix phx.gen.live Accounts User users name:string age:integer
+
+    # Phoenix Torch
+
+    mix phx.new phoenix_generated
+    # configure https://github.com/mojotech/torch
+    mix torch.install
+    mix torch.gen.html Accounts User users name:string age:integer
 
 Checkout the branches to see the different versions.
