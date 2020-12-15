@@ -37,6 +37,7 @@ defmodule PhoenixGeneratedWeb.Router do
     scope "/" do
       pipe_through :browser
       live_dashboard "/dashboard", metrics: PhoenixGeneratedWeb.Telemetry
+      resources "/users", UserController
     end
   end
 end
