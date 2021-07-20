@@ -12,6 +12,11 @@ Examples of different version of Phoenix using the generators:
     mix phx.new phoenix_generated
     mix phx.gen.html Accounts User users name:string age:integer
 
+    # Phoenix JSON
+
+    mix phx.new phoenix_geneated --no-html --no-webpack
+    mix phx.gen.json Accounts User users name:string age:integer
+
     # Phoenix Live
 
     mix phx.new phoenix_generated --live
