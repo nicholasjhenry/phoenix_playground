@@ -7,6 +7,8 @@ defmodule PhoenixGeneratedWeb.Router do
 
   scope "/api", PhoenixGeneratedWeb do
     pipe_through :api
+
+   resources "/users", UserController, except: [:new, :edit]
   end
 
   # Enables LiveDashboard only for development
